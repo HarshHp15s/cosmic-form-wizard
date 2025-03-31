@@ -1,14 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import FuturisticForm from "@/components/FuturisticForm"
+import ParticlesBackground from "@/components/ParticlesBackground"
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen w-full flex flex-col items-center justify-center futuristic-gradient p-4">
+      <ParticlesBackground />
+      
+      <div className="w-full max-w-lg animate-float">
+        <FuturisticForm />
+      </div>
+      
+      <div className="text-center mt-8 text-white/50 text-sm animate-fade-in" style={{ animationDelay: '400ms' }}>
+        <p>© 2023 Galactic Data Systems</p>
+        <p className="mt-1">Universal Protocol v3.7.2</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
